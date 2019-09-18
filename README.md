@@ -53,15 +53,16 @@ You want to try to remove as many pegs as possible. It is possible to end the ga
 
 ## Setup
 
-We have gotten you started with a printable board string that will look like the output below. Feel free to use this to get started, or write your own board printer!
+We have gotten you started with a `Board` class and a demo board that will print out like the output below when the `#print_board` method is called. Feel free to use this to get started, or write your own board printer! Keep in mind that the values of these board elements are hard coded, so you will need to make some adjustments to the Board class to enable gameplay.
 
 ```
-             1
-A          o   2
-B        •   •   3
-C      •   •   •   4
-D    •   •   •   •   5
-E  •   •   •   •   •
+$ ruby board.rb
+               1
+A            o   2
+B          •   •   3
+C        •   •   •   4
+D      •   •   •   •   5
+E    •   •   •   •   •
 ```
 
 The given board considers each position an ruby object on a board object. There are many other ways to print out the board, but an important consideration is how to select the pieces. You could letter or number each space, but you have to be able to determine which spaces are occupied and which are open.
@@ -78,3 +79,6 @@ There should be a time limit of 60 seconds.
 
 ### Board solver
 Can you build a solver? Given any empty starting position, can you list what moves will yield the fewest pegs at the end?
+
+### Web app
+Build this as a web app. Use JavaScript to select pegs.
